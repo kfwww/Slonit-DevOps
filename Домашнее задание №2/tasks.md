@@ -1,5 +1,7 @@
 # Домашнее задание №1
 
+---
+
 ## Задание 1
 ```bash
 [root@Server log]# cd /var/log && last -n 7 -f wtmp
@@ -14,12 +16,16 @@ root     pts/0        178.71.58.38     Sun Nov 10 19:56 - 22:22  (02:25)
 wtmp begins Wed Sep 21 08:11:39 2022
 ```
 
+---
+
 ## Задание 2
 ```bash
 [root@Server ~]# logger -p kern.info "Добра и мира посланникам из Альфа-Центавра!"
 [root@Server ~]# journalctl | grep "Добра и мира"
 Nov 21 20:39:27 Server.local root[210213]: Добра и мира посланникам из Альфа-Центавра!
 ```
+
+---
 
 ## Задание 3
 ```bash
@@ -37,6 +43,8 @@ Nov 21 20:25:20 Server.local systemd-logind[673]: Removed session 13.
 Nov 21 20:26:01 Server.local systemd-logind[673]: New session 15 of user root.
 ```
 
+---
+
 ## Задание 4
 ```bash
 [root@Server ~]# sudo vi /etc/rsyslog.d/mylog.conf
@@ -53,6 +61,8 @@ Nov 21 20:26:01 Server.local systemd-logind[673]: New session 15 of user root.
 [root@Server ~]# cat /var/log/my.log | grep "Hel"
 Nov 21 21:17:48 Server root[210292]: Hello :)
 ```
+
+---
 
 ## Задание 5
 ```bash
@@ -86,6 +96,8 @@ if $programname == 'sshd' then /var/log/ssh.log
 ssh.log
 ssh.log.1.gz
 ```
+
+---
 
 ## Задание 6
 ```bash
