@@ -365,8 +365,8 @@ Hello from Kali x2
 ```
 
 ### Часть 2
-![TCP](13_2_1.png)
-![UPD](13_2_2.png)
+![TCP](13_1.png)
+![UPD](13_2.png)
 
 ### Часть 3
 ```bash
